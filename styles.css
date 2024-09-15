@@ -1,0 +1,166 @@
+/* styles.css */
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right input {
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.cart {
+    color: #fff;
+    background-color: #f90;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ddd;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h4 {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #f90;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-menu {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .header-right {
+        margin-top: 15px;
+    }
+}
